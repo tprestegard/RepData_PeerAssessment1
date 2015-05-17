@@ -180,7 +180,7 @@ tbl_df(data2)
 
 Now, we repeat the above calculations with the new dataset.
 First, we make a histogram of the the total number of steps per day.
-We have to gropu by date and sum over the groups
+We have to group by date and sum over the groups
 
 
 ```r

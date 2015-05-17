@@ -150,7 +150,7 @@ tbl_df(data2)</code></pre>
 ## 9  0.0000000 2012-10-01    00:40
 ## 10 1.4716981 2012-10-01    00:45
 ## ..       ...        ...      ...</code></pre>
-<p>Now, we repeat the above calculations with the new dataset. First, we make a histogram of the the total number of steps per day. We have to gropu by date and sum over the groups</p>
+<p>Now, we repeat the above calculations with the new dataset. First, we make a histogram of the the total number of steps per day. We have to group by date and sum over the groups</p>
 <pre class="r"><code>g_data2 &lt;- group_by(data2,date)
 s_data2 &lt;- summarize(g_data2,tot_daily_steps=sum(steps[!is.na(steps)]))
 hist(s_data2$tot_daily_steps, col=&quot;red&quot;, breaks=seq(0,24000,3000),
